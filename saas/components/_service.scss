@@ -1,0 +1,217 @@
+@import '../variables/color';
+
+/*==================================================
+                    service part start
+===================================================*/
+#service_part {
+    padding: 55px 0 85px;
+
+
+    .service_head {
+        h2 {
+            color: #111;
+            font-size: 35px;
+            font-weight: 500;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #444;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+    .service_slider {
+        margin-top: 70px;
+        position: relative;
+        z-index: 111;
+
+
+        .row {
+            display: flex !important;
+        }
+
+        .text_right {
+            text-align: right;
+        }
+
+        .service_left {
+            p {
+                padding: 54px 40px;
+                background: $primary;
+                position: relative;
+                color: #444;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: 'Open Sans', sans-serif;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    right: -58px;
+                    top: 50%;
+                    border-top: 30px solid transparent;
+                    border-right: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-left: 30px solid $primary;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                }
+            }
+        }
+
+        .service_2nd {
+            p {
+                padding: 54px 40px;
+                background: $primary;
+                position: relative;
+                color: #444;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: 'Open Sans', sans-serif;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: -58px;
+                    top: 50%;
+                    border-top: 30px solid transparent;
+                    border-right: 30px solid $primary;
+                    border-bottom: 30px solid transparent;
+                    border-left: 30px solid transparent;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                }
+            }
+        }
+
+        .service_img {
+            width: 80px;
+            height: 80px;
+            background: $primary;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            padding: 15px;
+            margin: 0 37px;
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+            -moz-transition: all linear .3s;
+            -ms-transition: all linear .3s;
+            -o-transition: all linear .3s;
+        }
+
+        .service_right {
+            color: #111;
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'Raleway', sans-serif;
+            margin: 0 auto;
+        }
+
+        .prev_arr,
+        .next_arr {
+            position: absolute;
+            left: 50%;
+            color: #000;
+            background: #fff;
+            font-size: 22px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border: 2px solid #000;
+            line-height: 40px;
+            text-align: center;
+            transform: translateX(-50%);
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+            -moz-transition: all linear .3s;
+            -ms-transition: all linear .3s;
+            -o-transition: all linear .3s;
+
+            &:hover {
+                background: $main;
+                border-color: $main;
+            }
+        }
+
+        .prev_arr {
+            top: -60px;
+        }
+
+        .next_arr {
+            bottom: -60px;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: -20px;
+            width: 2px;
+            height: 850px;
+            background: url(../../images/border.png);
+            mask-repeat: repeat-x;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .slick-center {
+            .service_img {
+                height: 90px;
+                width: 90px;
+                background: $main;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                line-height: 90px;
+                text-align: center;
+            }
+
+            .service_left {
+                -webkit-box-shadow: 0px 10px 13px -7px #000000,
+                8px 18px 12px 18px rgba(0, 0, 0, 0);
+                box-shadow: 0px 10px 13px -7px #000000,
+                8px 18px 12px 18px rgba(0, 0, 0, 0);
+
+            }
+            .service_2nd {
+                -webkit-box-shadow: 0px 10px 13px -7px #000000,
+                8px 18px 12px 18px rgba(0, 0, 0, 0);
+                box-shadow: 0px 10px 13px -7px #000000,
+                8px 18px 12px 18px rgba(0, 0, 0, 0);
+
+            }
+
+        }
+    }
+}
+
+/*==================================================
+                    service part end
+===================================================*/

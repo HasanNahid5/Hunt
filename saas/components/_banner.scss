@@ -1,0 +1,173 @@
+@import '../variables/color';
+
+/*=========================================
+               banner part end
+==========================================*/
+
+
+#banner_part {
+    position: relative;
+
+    .prevArr {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        z-index: 1;
+        color: #000;
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: #fff;
+        text-align: center;
+        line-height: 35px;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+        cursor:pointer;
+        &:hover{
+            background: $main;
+        }
+}
+    .nextArr{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        z-index: 1;
+        color: #000;
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: #fff;
+        text-align: center;
+        line-height: 35px;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+        cursor:pointer;
+        &:hover{
+            background: $main;
+        }
+}
+
+    .slider_item {
+        padding: 210px 0 160px 0;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.70);
+            z-index: -1;
+        }
+
+        .banner_text {
+            h2 {
+                color: #fff;
+                font-size: 38px;
+                font-weight: 400;
+                font-family: 'Raleway', sans-serif;
+            }
+
+            h1 {
+                color: $main;
+                font-size: 55px;
+                font-weight: 700;
+                font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: $primary;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                font-family: 'Open Sans', sans-serif;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+        }
+
+        .banner_button a {
+            height: 50px;
+            width: 130px;
+            line-height: 50px;
+            text-align: center;
+            margin: 35px 4px 0 10px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .vm {
+            color: #222;
+            border: 1px solid $main;
+            background: $main;
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+            -moz-transition: all linear .3s;
+            -ms-transition: all linear .3s;
+            -o-transition: all linear .3s;
+
+            &:hover {
+                color: #fff;
+                background: transparent;
+                border: 1px solid #fff;
+            }
+        }
+
+        .hu {
+            color: #fff;
+            border: 1px solid #fff;
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+            -moz-transition: all linear .3s;
+            -ms-transition: all linear .3s;
+            -o-transition: all linear .3s;
+
+            &:hover {
+                color: #222;
+                background: $main;
+                border: 1px solid $main;
+
+            }
+        }
+    }
+
+}
+
+/* =============================================
+                banner part end
+================================================*/

@@ -1,0 +1,47 @@
+@import "../variables/color";
+/* =============================================
+                menu part start
+================================================*/
+.main_menu{
+    border-bottom: 1px solid $main;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    ul{
+        li{
+            a{
+                color: #fff;
+                font-weight: 500;
+                font-size: 14px;
+                font-family: 'Raleway', sans-serif;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -22px;
+                    height: 3px;
+                    width:0;
+                    background: $main;
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+}
+                &:hover:after{
+                    width: 100%;
+                }
+
+                &:hover{
+                    color: $main;
+                }
+            }
+        }
+    }
+}
+
+/* =============================================
+               menu part end
+================================================*/
